@@ -25,3 +25,9 @@ answer, including your reasoning, to this markdown file.
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+
+## References
+
+A helpful stackoverflow post Ali found for me
+https://stackoverflow.com/questions/54223966/recursion-how-do-i-keep-a-changing-variable-in-a-for-loop-from-changing-during
