@@ -26,8 +26,15 @@ answer, including your reasoning, to this markdown file.
 
 Implement and analyze breadth-first search.
 
+# Response
+
+This exercise was a tough one for me, mostly because of an issue I had with using recursion within for loops. The loop variable would persist in scope through recursive layers, causing all kinds of odd behavior. Thankfully, Cade figured out a solution to that problem for me. I did rebuild
 
 ## References
 
 A helpful stackoverflow post Ali found for me
 https://stackoverflow.com/questions/54223966/recursion-how-do-i-keep-a-changing-variable-in-a-for-loop-from-changing-during
+
+Used ChatGPT only to generate a connected graph of 10 nodes to play around with unit tests in. I didn't want to use my brainpower on that instead of the algorithm.
+
+Cade helped me with my recursion in a for loop by figuring out how to prevent the index counter persist in scope through recursive layers. I can just use the keyword let to accomplish this.
