@@ -50,4 +50,4 @@ const g2 = [
   
   // The above graph has 10 nodes and various paths you can test with.
   
-console.log(depthFirstSearch(g2, 0, 9))
+//console.log(depthFirstSearch(g2, 0, 9))

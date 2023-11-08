@@ -28,7 +28,11 @@ Implement and analyze breadth-first search.
 
 # Response
 
-This exercise was a tough one for me, mostly because of an issue I had with using recursion within for loops. The loop variable would persist in scope through recursive layers, causing all kinds of odd behavior. Thankfully, Cade figured out a solution to that problem for me. I did rebuild
+This exercise was a tough one for me, mostly because of an issue I had with using recursion within for loops. The loop variable would persist in scope through recursive layers, causing all kinds of odd behavior. Thankfully, Cade figured out a solution to that problem for me. I did rebuild my solution to this 4 separate times before I got it working the way I wanted. Now, I feel good about it.
+
+## Runtime Analysis
+
+For my implementation in the worst case it will iterate over each node, and each edge connected to each node. It won't iterate over a node more than once, because it stores which nodes it has visited. Therefore, it should have a runtime complexity of $|V|*|E|$ in the worst case.
 
 ## References
 
