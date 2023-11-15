@@ -19,9 +19,11 @@ function depthFirstSearch(graph, startNode, targetNode, path = [], visitedNodes 
                 return path
             } else
             {
-                if(path[0] == startNode)
+                if(path[0] == startNode && graph[startNode].length-1 == i)
                 {
                     s = "No path between those nodes was found."
+                    console.log(graph)
+                    console.log("Start: " + startNode + " Target: " + targetNode)
                     return s
                 }
                 path.pop()
@@ -31,7 +33,6 @@ function depthFirstSearch(graph, startNode, targetNode, path = [], visitedNodes 
 }
 
 
-//g = [[1,2],[1],[0,1]]
 
 // Generated this to run tests with using ChatGPT, because it sounded like a 
 //pain to make a decent graph to run unit tests on
@@ -50,4 +51,3 @@ const g2 = [
   
   // The above graph has 10 nodes and various paths you can test with.
   
-//console.log(depthFirstSearch(g2, 0, 9))
