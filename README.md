@@ -32,7 +32,7 @@ This exercise was a tough one for me, mostly because of an issue I had with usin
 
 ## Runtime Analysis
 
-For my implementation in the worst case it will iterate over each node, and each edge connected to each node. It won't iterate over a node more than once, because it stores which nodes it has visited. Therefore, it should have a runtime complexity of $|V|*|E|$ in the worst case.
+For my implementation in the worst case it will iterate over each node, and each edge once. This is a scenario where it iterates over each node and edge, as only the last edge in the graph that it checks leads to the target node. Each node will only be visited once because the algorithm keeps track of nodes it has visited and doesn't repeat visits. Then, the overall asymptotic complexity is $\Theta\left(|V|+|E|\right)$.
 
 ## References
 
