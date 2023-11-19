@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12472910&assignment_repo_type=AssignmentRepo)
 # Search in Graphs
 
 Recall the pseudocode for Depth-First Search:
@@ -24,3 +25,20 @@ answer, including your reasoning, to this markdown file.
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+# Response
+
+This exercise was a tough one for me, mostly because of an issue I had with using recursion within for loops. The loop variable would persist in scope through recursive layers, causing all kinds of odd behavior. Thankfully, Cade figured out a solution to that problem for me. I did rebuild my solution to this 4 separate times before I got it working the way I wanted. Now, I feel good about it.
+
+## Runtime Analysis
+
+For my implementation in the worst case it will iterate over each node, and each edge once. This is a scenario where it iterates over each node and edge, as only the last edge in the graph that it checks leads to the target node. Each node will only be visited once because the algorithm keeps track of nodes it has visited and doesn't repeat visits. Then, the overall asymptotic complexity is $\Theta\left(|V|+|E|\right)$.
+
+## References
+
+A helpful stackoverflow post Ali found for me
+https://stackoverflow.com/questions/54223966/recursion-how-do-i-keep-a-changing-variable-in-a-for-loop-from-changing-during
+
+Used ChatGPT only to generate a connected graph of 10 nodes to play around with unit tests in. I didn't want to use my brainpower on that instead of the algorithm.
+
+Cade helped me with my recursion in a for loop by figuring out how to prevent the index counter persist in scope through recursive layers. I can just use the keyword let to accomplish this.
